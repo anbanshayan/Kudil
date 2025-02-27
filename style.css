@@ -13,3 +13,8 @@
 #nav-bar a:last-child {
     margin-right: 0; /* Removes extra space on the last item */
 }
+.who-we-are{
+    background-color: rgb(4,77,73);
+    margin-top: 30px;
+    color: white;
+}
