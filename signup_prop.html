@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup_prop.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="join-proprietor">
+        <h2>Join as Proprietor</h2>
+        <form id="proprietor-form" action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="propFirstName">First Name</label>
+                <input type="text" id="propFirstName" name="propFirstName" required>
+            </div>
+            <div class="form-group">
+                <label for="propLastName">Last Name</label>
+                <input type="text" id="propLastName" name="propLastName" required>
+            </div>
+            <div class="form-group">
+                <label for="propertyType">Property ready for rent</label>
+                <select id="propertyType" name="propertyType" required>
+                    <option value="">Select Property Type</option>
+                    <option value="Room">Room</option>
+                    <option value="Apartments">Apartments</option>
+                    <option value="Villa">Villa</option>
+                    <option value="Long House">Long House</option>
+                    <option value="House Boat">House Boat</option>
+                    <option value="Home">Home</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ownershipProof">Document Validating that property belongs to you (image upload)</label>
+                <input type="file" id="ownershipProof" name="ownershipProof" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="propertyAddress">Address of property located</label>
+                <input type="text" id="propertyAddress" name="propertyAddress" required>
+            </div>
+            <div class="form-group">
+                <label for="district">District</label>
+                <input type="text" id="district" name="district" required>
+            </div>
+            <div class="form-group">
+                <label for="propContactNo">Contact No</label>
+                <input type="tel" id="propContactNo" name="propContactNo" required>
+            </div>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="propTerms" name="propTerms" required>
+                <label for="propTerms">I agree to terms and conditions</label>
+            </div>
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+    </section>
+    
+</body>
+</html>

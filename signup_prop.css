@@ -1,16 +1,4 @@
-body {
-    background-color: rgba(4, 77, 73, 0.05);
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.signup-form {
+.join-proprietor {
     max-width: 600px;
     margin: 40px auto;
     padding: 40px;
@@ -18,21 +6,10 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
     border: 1px solid #e0e0e0;
-    width: 100%;
     position: relative;
 }
 
-.signup-form::before {
-    content: '';
-    display: block;
-    height: 6px;
-    background: #ffc040;
-    border-radius: 10px 10px 0 0;
-    margin: -40px -40px 20px -40px;
-    width: calc(100% + 80px);
-}
-
-.signup-form h2 {
+.join-proprietor h2 {
     color: #044d49;
     text-align: center;
     margin-bottom: 30px;
@@ -40,19 +17,19 @@ body {
     font-size: 2rem;
 }
 
-.form-group {
+.join-proprietor .form-group {
     margin-bottom: 24px;
 }
 
-.form-group label {
+.join-proprietor .form-group label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
     color: #333;
 }
 
-.form-group input,
-.form-group select {
+.join-proprietor .form-group input,
+.join-proprietor .form-group select {
     width: 100%;
     padding: 12px 15px;
     border: 1px solid #ddd;
@@ -62,25 +39,25 @@ body {
     transition: border-color 0.3s;
 }
 
-.form-group input:focus,
-.form-group select:focus {
+.join-proprietor .form-group input:focus,
+.join-proprietor .form-group select:focus {
     border-color: #ffc040;
     outline: none;
     box-shadow: 0 0 0 2px rgba(255, 192, 64, 0.2);
 }
 
-.form-group.checkbox {
+.join-proprietor .form-group.checkbox {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 20px;
 }
 
-.form-group.checkbox input {
+.join-proprietor .form-group.checkbox input {
     width: auto;
 }
 
-.signup-form .cta-button {
+.join-proprietor .cta-button {
     width: 100%;
     padding: 14px;
     background-color: #ffc040;
@@ -94,25 +71,7 @@ body {
     margin-top: 10px;
 }
 
-.signup-form .cta-button:hover {
+.join-proprietor .cta-button:hover {
     background-color: #ffaa00;
     transform: translateY(-2px);
-}
-
-.login-prompt {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 0.95rem;
-}
-
-.login-prompt a {
-    color: #044d49;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.login-prompt a:hover {
-    color: #ffc040;
-    text-decoration: underline;
 }
