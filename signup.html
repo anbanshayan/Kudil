@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="signup-form">
+        <h2>Sign Up</h2>
+        <form id="signup" action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="nicPassport">NIC / Passport No</label>
+                <input type="text" id="nicPassport" name="nicPassport" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="arrivalDate">Date of Arrival to Sri Lanka</label>
+                <input type="date" id="arrivalDate" name="arrivalDate">
+            </div>
+            <div class="form-group">
+                <label for="contactNo">Contact No</label>
+                <input type="tel" id="contactNo" name="contactNo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="identityProof">Identity Proof (image upload)</label>
+                <input type="file" id="identityProof" name="identityProof" accept="image/*" required>
+            </div>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to above terms and conditions</label>
+            </div>
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+        <p class="login-prompt">
+            Are you already signed up? <a href="#">Login</a>
+        </p>
+    </section>
+    
+</body>
+</html>
